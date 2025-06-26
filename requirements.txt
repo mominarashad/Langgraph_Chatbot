@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+gradio
+langchain
+langgraph
+langchain-groq
+python-dotenv
+langchain-tavily
+langfuse
+pymongo
+langchain-google-genai
+multidict>=4.5,<7.0
