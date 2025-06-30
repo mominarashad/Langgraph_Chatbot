@@ -66,7 +66,7 @@ Running the App
 1. Start the FastAPI backend
 
 ```bash
-python main.py
+uvicorn server.fast:app --reload
 ```
 Runs at: http://127.0.0.1:8000
 
@@ -75,6 +75,11 @@ Runs at: http://127.0.0.1:8000
 python frontend.py
 ```
 Opens at: http://127.0.0.1:7860
+
+3.Start the mongoDb at the connection string 
+```bash
+ mongodb://localhost:27017/
+```
 
 API Endpoints
 POST /chat/: Send a message and receive a streamed response
