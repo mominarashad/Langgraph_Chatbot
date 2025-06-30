@@ -46,37 +46,37 @@ cd Langgraph_Chatbot
 ```
 
 
-###2.Create and activate virtual environment
+2.Create and activate virtual environment
 python -m venv venv
 venv\Scripts\activate
 
-###3.Install dependencies
+3.Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-###4.Create .env file
+4.Create .env file
 MONGO_URI=mongodb://localhost:27017/
 LANGFUSE_PUBLIC_KEY=your_public_key
 LANGFUSE_SECRET_KEY=your_secret_key
 LANGFUSE_HOST=https://cloud.langfuse.com
 
 
-##Running the App
-###1. Start the FastAPI backend
+Running the App
+1. Start the FastAPI backend
 
 ```bash
 python main.py
 ```
 Runs at: http://127.0.0.1:8000
 
-###2.Start the Gradio frontend
+2.Start the Gradio frontend
 ```bash
 python frontend.py
 ```
 Opens at: http://127.0.0.1:7860
 
-##API Endpoints
+API Endpoints
 POST /chat/: Send a message and receive a streamed response
 
 GET /history/{session_id}: Fetch saved chat history
